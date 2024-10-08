@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User List</title>
+</head>
+<body>
+    <div class="home-container"> <!-- Change made here -->
+        <h1 class="text-center">Registered Users</h1>
+        <button class="btn" id="addUserBtn">Add New User</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        // Redirect to sign-up page when clicking the add user button
+        document.getElementById('addUserBtn').addEventListener('click', () => {
+            window.location.href = 'signup.html';
+        });
+    </script>
+</body>
+</html>
